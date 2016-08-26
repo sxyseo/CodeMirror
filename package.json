@@ -7,7 +7,7 @@
     "directories": {"lib": "./lib"},
     "scripts": {
       "prepublish": "npm run-script build",
-      "build": "rollup --banner \"`cat src/banner.js`\" --format umd -n CodeMirror src/codemirror.js -o lib/codemirror.js",
+      "build": "rollup --banner \"`cat src/banner.js`\" --format umd -n CodeMirror src/codemirror.js -o lib/codemirror.js || true",
       "test": "node ./test/run.js",
       "lint": "bin/lint"
     },
